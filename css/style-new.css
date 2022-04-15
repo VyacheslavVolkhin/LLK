@@ -1863,6 +1863,11 @@ h4.h4-title,
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.section-tabs-slider .btn-action-tab {
+  width: auto;
+  white-space: nowrap;
+  padding-right: 35px;
+}
 .heading-title-section {
   margin-bottom: 22px;
 }

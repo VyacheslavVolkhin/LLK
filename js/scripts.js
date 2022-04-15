@@ -35,7 +35,7 @@ $(document).ready(function() {
         $('.section-tabs-slider .slider').slick({
             dots: false,
             slidesToShow: 3,
-            variableWidth: false,
+            variableWidth: true,
             infinite: false,
             adaptiveHeight: false,
             initialSlide: 3,
