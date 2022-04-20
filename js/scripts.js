@@ -12,6 +12,22 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         return false;
     })
+
+    //tabs
+    $('.js-tabs-nav').each(function() {
+        $('.js-tab-block[data-tab*="'+$(this).find('.active').attr('data-tab')+'"]').addClass('active');
+    })
+    $('.js-tabs-nav a').on('click', function() {
+        if ($(this).hasClass('active')) {} else {
+            $('.js-tab-block').removeClass('active');
+            $(this).parents('.js-tabs-nav').find('.active').removeClass('active');
+            $(this).addClass('active');
+            $('.js-tabs-nav').each(function() {
+                $('.js-tab-block[data-tab*="'+$(this).find('.active').attr('data-tab')+'"]').addClass('active');
+            })
+        }
+        return false;
+    })
     
     
     //text hidden toggle
