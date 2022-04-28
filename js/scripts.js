@@ -6,6 +6,17 @@ $(document).ready(function() {
         $('.header-burger, .head-menu').removeClass('open__menu');
     });
 
+    //field-password
+    $('.js-password-toggle').on('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).parent('.frm-field-password').find('.form-input').prop('type', 'password');
+        } else {
+            $(this).addClass('active');
+            $(this).parent('.frm-field-password').find('.form-input').prop('type', 'text');
+        }
+        return false;
+    })
 
     //btn tgl
     $('.js-btn-tgl').on('click', function () {
